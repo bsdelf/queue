@@ -32,3 +32,5 @@ Queue.prototype.shift = function () {
     }
     return data;
 };
+
+module.exports = Queue;
