@@ -12,12 +12,11 @@ Queue.prototype.push = function (data) {
     if (this.tail) {
         this.tail.next = node;
         this.tail = node;
-        ++this.length;
     } else {
         this.head = node;
         this.tail = node;
-        this.length = 1;
     }
+    this.length += 1;
 };
 
 Queue.prototype.shift = function () {
@@ -28,7 +27,7 @@ Queue.prototype.shift = function () {
         if (this.head === null) {
             this.tail = null;
         }
-        --this.length;
+        this.length -= 1;
     }
     return data;
 };
