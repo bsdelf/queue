@@ -4,7 +4,7 @@
 
 #### `length`
 
-Reflects the number of elements in an Queue.
+Reflects the number of elements in an queue.
 
 ### Methods
 
@@ -15,6 +15,9 @@ Adds one element to the end of an queue.
 #### `Queue.prototype.shift()`
 
 Removes the first element from an queue and returns that element.
+
+#### `Queue.prototype.unshift()`
+Adds one element to the beginning of an queue.
 
 ## Benchmark
 

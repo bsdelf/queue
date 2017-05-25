@@ -32,4 +32,16 @@ Queue.prototype.shift = function () {
     return data;
 };
 
+Queue.prototype.unshift = function (data) {
+    var node = {
+        data: data,
+        next: this.head
+    };
+    this.head = node;
+    if (!this.tail) {
+        this.tail = node;
+    }
+    this.length += 1;
+};
+
 module.exports = Queue;
