@@ -1,15 +1,19 @@
 {
   "name": "queue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Queue",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "queue",
     "fifo"
   ],
   "author": "Yanhui Shen",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.2"
+  }
 }
