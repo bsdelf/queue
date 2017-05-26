@@ -1,6 +1,6 @@
 {
   "name": "queue",
-  "version": "1.0.3",
+  "version": "1.2.0",
   "description": "Queue",
   "main": "index.js",
   "scripts": {

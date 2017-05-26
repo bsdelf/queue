@@ -68,4 +68,11 @@ Queue.prototype.every = function (callback) {
     return true;
 };
 
+Queue.prototype.reduce = function (callback, acc) {
+    for (var node = this.head; node; node = node.next) {
+        acc = callback(acc, node.data);
+    }
+    return acc;
+};
+
 module.exports = Queue;

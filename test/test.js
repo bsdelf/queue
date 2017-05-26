@@ -123,4 +123,19 @@ describe('Queue', () => {
             assert.equal(false, queue.every(data => data === -1));
         });
     });
+
+    describe('#reduce()', () => {
+        it('should reduce to sum', () => {
+            let queue = new Queue();
+
+            let sum = 0;
+            for (let i = 0; i < LENGTH; ++i) {
+                sum += i;
+                queue.push(i);
+                assert.equal(i + 1, queue.length);
+            }
+
+            assert.equal(sum, queue.reduce((acc, val) => acc + val, 0));
+        });
+    });
 });
