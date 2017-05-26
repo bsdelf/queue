@@ -1,8 +1,8 @@
 {
   "name": "queue",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Queue",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha"
   },
