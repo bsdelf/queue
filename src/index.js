@@ -44,4 +44,28 @@ Queue.prototype.unshift = function (data) {
     this.length += 1;
 };
 
+Queue.prototype.forEach = function (callback) {
+    for (var node = this.head; node; node = node.next) {
+        callback(node.data);
+    }
+};
+
+Queue.prototype.some = function (callback) {
+    for (var node = this.head; node; node = node.next) {
+        if (callback(node.data)) {
+            return true;
+        }
+    }
+    return false;
+};
+
+Queue.prototype.every = function (callback) {
+    for (var node = this.head; node; node = node.next) {
+        if (!callback(node.data)) {
+            return false;
+        }
+    }
+    return true;
+};
+
 module.exports = Queue;
