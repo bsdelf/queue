@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('chai').assert;
 const Queue = require('../src/index.js');
 

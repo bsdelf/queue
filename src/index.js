@@ -1,3 +1,5 @@
+'use strict';
+
 function Queue() {
     this.head = null;
     this.tail = null;
@@ -9,13 +11,12 @@ Queue.prototype.push = function (data) {
         data: data,
         next: null
     };
-    if (this.tail) {
+    if (this.head) {
         this.tail.next = node;
-        this.tail = node;
     } else {
         this.head = node;
-        this.tail = node;
     }
+    this.tail = node;
     this.length += 1;
 };
 

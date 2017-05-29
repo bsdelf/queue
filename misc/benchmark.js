@@ -1,3 +1,5 @@
+'use strict';
+
 var Queue = require('../src/index.js');
 
 var n = 99999;
